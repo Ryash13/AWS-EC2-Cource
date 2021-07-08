@@ -1,4 +1,4 @@
-##Lab 01 Configure and Launch Lunix-2 AMI EC2 instance
+## Lab 01 Configure and Launch Lunix-2 AMI EC2 instance
 
 - Login to the AWS Console
 - From the top Navigation Bar Click Services
