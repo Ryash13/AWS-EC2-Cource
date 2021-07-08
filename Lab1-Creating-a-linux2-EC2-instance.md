@@ -1,0 +1,41 @@
+##Lab 01 Configure and Launch Lunix-2 AMI EC2 instance
+
+- Login to the AWS Console
+- From the top Navigation Bar Click Services
+- Select EC2 Service
+- Click on Launch Instance
+- Choose Amazon Linux 2 AMI (HVM), SSD Volume Type and click on Select
+- Choose Instance Type of t2.micro
+- Configure Instance Details
+    There are various configuration we can make but for this lab we will leave the configuration as default.
+    NOTE: Network and Subnet is important configuration and Default subnet will be of any availability zone
+    
+- Click on Next: Add Storage => There we can set the Size of the GiB storage we want in our Volume(Leave it as default)
+- Click on Next: Add Tags
+    You can add various tags and its respective value in the EC2 instance (Atleast add a name tag)
+
+- Click on Next: Configure Security Group
+    Either you can choose an existing Security group or you can create a new Security Group from scratch
+
+- Click on Review and Launch
+- Create a Key Pair, Download it in your local machine, Check the Acknoledge box and Launch Instance
+
+Your Instance will launch now.
+
+- You will be able to see the InstanceID, Click on that
+- Select the Instance and click on Connect
+- Copy the String from the Example Section
+
+For windows users only
+  - Goto https://git-scm.com/downloads and install the git in your local machine
+  - Go to the directory where you have downloaded the .pem key file
+  - Right click on that directory and choose git bash terminal for logging into your EC2 instance
+  
+- On terminal type command: ls to list all the items in that directory and make sure .pem file is visible
+- Type command: chmod 400 "your-key-name.pem"  (ex:- chmod 400 MyFirstKey.pem)
+- Hit Enter
+- Now paste the connection string that you copied earlier
+- Type yes when asking "Are you sure you want to continue connecting"
+
+- You will be logged into your Linux 2 AMI EC2 Instance
+- To confirm type any Linux command to see whether it is working fine or not.
