@@ -43,7 +43,7 @@ aws s3 ls - to list out the buckets
 aws s3 mb s3://ec2-new-bucket - to add a new bucket
 ```
 - Now you all the buckets available in EC2 instance will be displayed
-+ `NEVER EVER USE THIS METHOD TO GIVE PERMISSION TO A USER`
++ `NEVER EVER USE THIS METHOD TO GIVE PERMISSION TO A USER(Risky to expose your Access Key)`
 - Using the following command anyone who gets the access to use your ec2 instance will able to gain your access key
 ```console
 cat ~/.aws/credentials
